@@ -1,0 +1,6 @@
+#include "ap960.c"
+#include "ap960d.c"
+#include "cm959.c"
+#include "cm959d.c"
+#include "co958.c"
+#include "co958d.c"
