@@ -1,0 +1,19 @@
+
+bank_account: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+BANK_ACCOUNT        deposit @1             positive_amount:             
+<00000000043095E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @3                                             
+<00000000043095A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000043095A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
