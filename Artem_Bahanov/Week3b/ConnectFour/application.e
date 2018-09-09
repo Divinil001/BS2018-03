@@ -2,7 +2,7 @@ class
 	APPLICATION
 
 inherit
-	ARGUMENTS
+	EXECUTION_ENVIRONMENT
 
 create
 	make
@@ -37,6 +37,8 @@ feature {NONE} -- Initialization
 				io.read_integer
 				column := io.last_integer
 				if is_valid_column(column) ~ False then
+					system("cls")
+					print_board
 					io.put_string ("Error. Try again >> ")
 				end
 			end
@@ -226,6 +228,7 @@ feature {NONE} -- Initialization
 					is_found := True
 					board.put (current_player, i, column)
 					filled_cells := filled_cells + 1
+					system("cls")
 					print_board
 					check_winner(i, column)
 					if current_player ~ 1 then
@@ -242,7 +245,6 @@ feature {NONE} -- Initialization
 		local
 			i, j: INTEGER
 		do
-			io.put_new_line
 			from
 				i := 1
 			until
@@ -299,6 +301,7 @@ feature {NONE} -- Initialization
 			create board.make_filled (0, n, m)
 			io.put_string ("The board successfully created%N")
 			io.put_string ("Starting the game %N")
+			system("cls")
 			print_board
 		end
 
