@@ -123,7 +123,7 @@ feature
 				move1
 			end
 			--  or check_col = 1 or check_diag1 = 1 or diag2 = 1
-			if check_row = 1 or check_col = 1 or check_diag1 = 1 then
+			if check_row = 1 or check_col = 1 or check_diag1 = 1 or check_diag2 = 1 then
 				win := TRUE
 				win1 := TRUE
 			else
@@ -170,7 +170,7 @@ feature
 				move2
 			end
 			-- or check_col = 2 or check_diag1 = 2 or diag2 = 2
-			if check_row = 2 or check_col = 2 or check_diag1 = 2 then
+			if check_row = 2 or check_col = 2 or check_diag1 = 2 or check_diag2 = 2 then
 				win := TRUE
 				win2 := TRUE
 			else
@@ -211,8 +211,10 @@ feature
 				if (a[i, j] = a[i, j + 1])then
 					if a[i, j] = 1 then
 						check1 := check1 + 1
+						check2 := 0
 					elseif a[i,j] = 2 then
 						check2 := check2 + 1
+						check1 := 0
 					end
 				else
 					if a[i, j] = 1 then
@@ -436,4 +438,129 @@ feature
 		end
 
 end
+
+check_diag2: INTEGER
+	local
+			check1, check2 : INTEGER
+			break: BOOLEAN
+	do
+		check1 := 0
+		check2 := 0
+		break := FALSE
+		from
+			i := 1
+		until
+			i > n or break
+		loop
+			from
+				j := m
+			until
+				j < 0 or break
+			loop
+			if ( m - j + i + 1 < n + 1 and j - 1 > 0) then
+				if (a[m - j + i , j] = a[m - j + i + 1, j - 1]) then
+					if
+						a[m - j + i , j] = 1
+					then
+						check1 := check1 + 1
+						check2 := 0
+					elseif  a[m - j + i , j] = 2
+					then
+						check2 := check2 + 1
+						check1 := 0
+					else
+						check1 := 0
+						check2 := 0
+					end
+				else
+					if a[m - j + i , j] = 1 then
+						check1 := 1
+						check2 := 0
+					elseif a[m - j + i , j] = 2 then
+						check1 := 0
+						check2 := 1
+					else
+						check1 := 0
+						check2 := 0
+					end
+				end
+			end
+			j := j - 1
+			if check1 = 3 then
+				break := true
+				win := true
+				win1 := true
+				Result := 1
+			elseif check2 = 3 then
+				break := true
+				win := true
+				win2 := true
+				Result := 2
+			end
+			end
+			i := i + 1
+		end
+
+
+		if break = False then
+			check1 := 0
+			check2 := 0
+			from
+				j := m - 1
+			until
+				j < 0 or break
+			loop
+				from
+					i := 1
+				until
+					i > n or break
+				loop
+					if
+						(i + 1 < n + 1 and j - i - 1 > 0)
+					then
+						if (a[i, j - i] = a[i + 1, j - i - 1]) then
+							if
+								a[i, j - i] = 1
+							then
+								check1 := check1 + 1
+								check2 := 0
+							elseif a[i, j - i] = 2 then
+								check2 := check2 + 1
+								check1 := 0
+							else
+								check1 := 0
+								check2 := 0
+							end
+						else
+							if
+								a[i, j - i] = 1
+							then
+								check1 := 1
+								check2 := 0
+							elseif a[i, j - i] = 2 then
+								check2 := 1
+								check1 := 0
+							else
+								check1 := 0
+								check2 := 0
+							end
+						end
+					end
+					i:= i + 1
+					if check1 = 3 then
+						break := true
+						win := true
+						win1 := true
+						Result := 1
+					elseif check2 = 3 then
+						break := true
+						win := true
+						win2 := true
+						Result := 2
+					end
+				end
+				j := j - 1
+			end
+		end
+	end
 end
