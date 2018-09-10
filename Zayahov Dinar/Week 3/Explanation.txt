@@ -1,0 +1,4 @@
+In second one we use one attribute, and both functions use this attribute and they depend on each other.
+In first one functions independent and use different local variables.
+I think it is better to use one attribute to many functions when they need to work with one particular variable.
+If functions have different goal it is better to use local variables in each case.
