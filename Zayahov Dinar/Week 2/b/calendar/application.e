@@ -7,7 +7,7 @@ class
 	APPLICATION
 
 inherit
-	ARGUMENTS
+	ARGUMENTS; DATE_VALUE; TIME_VALUE
 
 create
 	make
@@ -31,18 +31,20 @@ feature {NONE} -- Initialization
 
 			o1.set_work_place ("School")
 			print("Work place: "+o1.work_place+"%N")
-
 			e1.set_subject ("IFA2018")
 			e1.set_place ("Germany")
 			print("Event: "+e1.subject+"%N")
 			print("Where: "+e1.place+"%N")
-
 
 			edit_subject(e1, "Apple Presentation")
 			print("Event: "+e1.subject+"%N")
 
 			create e2.set_place ("Germany")
 			in_conflict(e1, e2)
+
+			e1.set_day (24)
+			e2.set_day (23)
+
 		end
 
 feature
@@ -56,9 +58,9 @@ feature
 			ent.set_subject(new_subj)
 		end
 
-	edit_date(ent: ENTRY; new_date: TIME)
+	edit_date(ent: ENTRY; y,m,d,h,m0,s: INTEGER)
 		do
-			ent.set_date(new_date)
+			ent.set_date_o(y,m,d,h,m0,s)
 		end
 
 	get_owner_name(ent: ENTRY)
@@ -68,7 +70,7 @@ feature
 	in_conflict(ent1, ent2: ENTRY)
 		do
 			if
-				((ent1.place=ent2.place) or (ent1.date=ent2.date))
+				(ent1.place=ent2.place) or (ent1.minute=ent2.minute) or (ent1.hour=ent2.hour) or (ent1.day=ent2.day) or (ent1.month=ent2.month)
 			then
 				print(True)
 			else

@@ -6,20 +6,24 @@ note
 
 class
 	ENTRY
-
+inherit
+	DATE_VALUE; TIME_VALUE
 create
-	set_subject, set_owner, set_place, set_date
+	set_subject, set_owner, set_place, set_date_o
 
 feature
 	owner: PERSON
 	subject: STRING
 	place: STRING
-	date: TIME
+	date_0: TIME
 
 feature
-	set_date(d: TIME)
+	set_date_o(y,m,d,h,m0,s:INTEGER)
 		do
-			date:=d
+			set_second(s)
+			set_minute(m0)
+			set_hour(h)
+			set_date(y,m,d)
 		end
 
 	set_owner(o: PERSON)
