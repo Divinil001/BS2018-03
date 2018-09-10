@@ -321,7 +321,7 @@ feature
 			until
 				break or j > m
 			loop
-				if (i + j + 1 < n and j + 1 < m) then
+				if (i + j + 1 < n+1 and j + 1 < m+1) then
 					if a[i+j, j] = a[i+j+1, j + 1] then
 						if
 							a[i+j, j] = 1
@@ -356,7 +356,6 @@ feature
 				end
 				j := j + 1
 				if check1 = 3 then
-					Io.put_string ("sfgdfg")
 						break := TRUE
 						win1:= True
 						win := True
@@ -384,7 +383,7 @@ feature
 			until
 				break or j > n
 			loop
-				if (i + j + 1 < m and j + 1 < n) then
+				if (i + j + 1 < m + 1 and j + 1 < n + 1) then
 					if a[j, j + i] = a[j + 1, i + j + 1] then
 						if
 							a[j, j + i] = 1
