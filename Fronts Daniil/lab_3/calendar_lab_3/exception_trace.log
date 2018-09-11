@@ -1,0 +1,47 @@
+
+calendar_lab_3: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<0000000003FE4460>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+CALENDAR            in_conflict @4                                      
+<0000000003FE4418>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+CALENDAR            make @17                                            
+<0000000003FE4418>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+CALENDAR            root's creation                                     
+<0000000003FE4418>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+calendar_lab_3: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               item @3                valid_index:                 
+<00000000040DB460>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+CALENDAR            in_conflict @4                                      
+<00000000040DB418>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+CALENDAR            make @17                                            
+<00000000040DB418>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+CALENDAR            root's creation                                     
+<00000000040DB418>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+calendar_lab_3: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
