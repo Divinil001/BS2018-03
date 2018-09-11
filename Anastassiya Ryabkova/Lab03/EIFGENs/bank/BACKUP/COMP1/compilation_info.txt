@@ -1,5 +1,0 @@
-Compiler version: 17.01.9.9700 GPL Edition - win64
-Type: Quick_melt
-batch mode: False
-new session: True
-starting date: 08/28/2018 12:09:21.229 PM

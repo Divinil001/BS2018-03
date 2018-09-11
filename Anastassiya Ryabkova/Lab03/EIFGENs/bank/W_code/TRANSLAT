@@ -1,6 +1,0 @@
-bank	BANK_ACCOUNT	name	F958_7055	C1\ba958.c
-bank	BANK_ACCOUNT	balance	F958_7056	C1\ba958.c
-bank	BANK_ACCOUNT	make	F958_7057	C1\ba958.c
-bank	BANK_ACCOUNT	set_name	F958_7058	C1\ba958.c
-bank	BANK_ACCOUNT	deposit	F958_7059	C1\ba958.c
-bank	BANK_ACCOUNT	withdraw	F958_7060	C1\ba958.c
