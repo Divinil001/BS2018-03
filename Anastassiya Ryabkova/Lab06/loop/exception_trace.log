@@ -1,0 +1,106 @@
+
+ec: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+SELECTABLE_TEXT_PANEL
+                    ev_application @1      
+<00000000042F7F18>  (From EV_SHARED_APPLICATION)
+                                           Assertion violated.           Fail
+-------------------------------------------------------------------------------
+SELECTABLE_TEXT_PANEL
+                    ev_application @1      
+<00000000042F7F18>  (From EV_SHARED_APPLICATION)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+SELECTABLE_TEXT_PANEL
+                    user_initialization @1 
+<00000000042F7F18>  (From KEYBOARD_SELECTABLE_TEXT_PANEL)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+SELECTABLE_TEXT_PANEL
+                    user_initialization @7 
+<00000000042F7F18>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+SELECTABLE_TEXT_PANEL
+                    initialize @29         
+<00000000042F7F18>  (From TEXT_PANEL_IMP)  Routine failure.              Fail
+-------------------------------------------------------------------------------
+SELECTABLE_TEXT_PANEL
+                    default_create @4      
+<00000000042F7F18>  (From TEXT_PANEL)      Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG build_prompt_interface @7
+<00000000042EE028>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG build_dialog_interface @18
+<00000000042EE028>  (From ES_PROMPT)       Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG build_interface @7                                  
+<00000000042EE028>  (From ES_DIALOG)       Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG make @4                                             
+<00000000042EE028>  (From ES_TOOL_FOUNDATIONS)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG make @7                                             
+<00000000042EE028>  (From ES_PROMPT)       Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG make_standard @1                                    
+<00000000042EE028>  (From ES_PROMPT)       Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_EXCEPTION_DIALOG make @1                                             
+<00000000042EE028>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_GRAPHIC          clean_exit @1                                       
+<0000000005406378>  (From ES_ABSTRACT_GRAPHIC)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ES_GRAPHIC          handle_exception @3                                 
+<0000000005406378>  (From ES_ABSTRACT_GRAPHIC)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_LITE_ACTION_SEQUENCE
+                    call @21               
+<0000000005406638>  (From ACTION_SEQUENCE) Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_LITE_ACTION_SEQUENCE
+                    call @3                
+<0000000005406638>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  on_exception_action @7                              
+<0000000005406038>  (From EV_APPLICATION_I)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_IMP  process_event_queue @64
+<0000000005406038>  (From EV_APPLICATION_I)
+                                           Resumption attempt failed.    Rescue
+-------------------------------------------------------------------------------
+EV_APPLICATION_HANDLER
+                    process_application_event_queue @1
+<0000000005406428>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION_HANDLER
+                    launch @3              
+<0000000005406428>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION      internal_launch_application @2
+<0000000005406398>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EV_APPLICATION      launch @4                                           
+<0000000005406398>                         Routine failure.              Rescue
+-------------------------------------------------------------------------------
+ES_GRAPHIC          make @4                                             
+<0000000005406378>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EB_KERNEL           make @4                                             
+<00000000052B2488>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+EB_KERNEL           root's creation                                     
+<00000000052B2488>                         Routine failure.              Exit
+-------------------------------------------------------------------------------

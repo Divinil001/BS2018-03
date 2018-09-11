@@ -1,0 +1,46 @@
+class CMS
+
+
+create make
+
+feature
+
+    make
+    local c, c1:CONTACT -- create contact two times
+     
+        do
+        c:=create_contact
+        c1:=create_contact
+        
+        print(c.name)
+
+        edit_contact(c,"Alla", 8777, "tech", "a@mail") -- edit first contact
+        print(add_emergency_contact(c,c1)) --print emergency contact
+        
+        
+        end
+
+    create_contact:CONTACT
+        local c:CONTACT
+        do
+            create c.make
+            result := c
+        end
+
+    edit_contact(c: CONTACT;a_name:STRING; a_phone:INTEGER; a_work:STRING; a_email:STRING)
+        do
+           c.name:=a_name
+            c.phone_number := a_phone
+            c.work_place := a_work
+            c.email := a_email
+        end
+        
+     add_emergency_contact(c1: detachable CONTACT;c2: detachable CONTACT):CONTACT
+       
+        do
+        c1.set_emergency(c2)
+        result:= c1.call_emergency
+        end
+
+end
+

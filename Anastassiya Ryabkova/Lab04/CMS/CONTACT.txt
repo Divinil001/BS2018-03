@@ -1,0 +1,65 @@
+class CONTACT
+
+create make
+
+feature --Initialization
+    name:STRING assign set_name
+    phone_number: INTEGER assign set_phone
+    work_place: STRING assign set_work
+    email: STRING assign set_email
+    
+--Ask user to enter data
+    make
+        do
+            io.put_string("Enter name  ")
+            io.next_line
+            io.read_line
+            set_name(io.last_string)
+
+            io.put_string("Enter phone  ")
+            io.next_line
+            io.read_integer
+            set_phone(io.last_integer)
+
+            io.put_string("Enter work place   ")
+            io.next_line
+            io.read_line
+            set_work(io.last_string)
+
+            io.put_string("Enter email  ")
+            io.next_line
+            io.read_line
+            set_email(io.last_string)
+
+        end
+feature 
+--setters
+    set_name(a_name:STRING)
+     do
+        name:=a_name
+     end
+ 
+
+     set_phone(a_phone:INTEGER)
+     do
+        phone_number:=a_phone
+     end
+
+    set_work(a_work:STRING)
+      do
+        work_place:=a_work
+     end
+
+     set_email(a_email:STRING)
+     do
+        email:=a_email
+     end
+     
+    call_emergency(a_cont:CONTACT):CONTACT
+    local emergency_contact: CONTACT 
+        do
+            emergency_contact := a_cont
+            result := emergency_contact
+        end
+end --Class CONTACT end
+    

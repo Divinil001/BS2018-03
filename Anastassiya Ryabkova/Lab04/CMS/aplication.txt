@@ -1,0 +1,43 @@
+note
+    description : "root class of the application"
+
+    date        : "$Date$"
+
+    revision    : "$Revision$"
+
+class
+    APPLICATION
+
+
+inherit
+    ARGUMENTS
+
+
+create
+    make
+
+
+feature {NONE} -- Initialization
+	make
+            -- Run application.
+
+            local cont:CONTACT
+
+            	  cms:CMS
+
+
+        do
+            
+-- Add your code here
+
+            create cms.make
+
+            create cont.make
+
+
+
+        end
+ 
+       end
+
+
