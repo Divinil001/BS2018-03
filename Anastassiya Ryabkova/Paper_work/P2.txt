@@ -1,0 +1,18 @@
+P2 is correct
+
+from
+i:=1;j:=n;Result:= False
+ until
+i=j and not Result
+loop 
+m:=(i+j)//2 
+if t[m] < x 
+then 
+i:=m+1 
+else 
+if t[m]=x 
+then 
+Result:=True
+else j:=m-1 
+end 
+end
