@@ -1,0 +1,14 @@
+from
+  i := 1; j := n; Result := False
+until i = j and not Result loop
+  m := (i + j) // 2
+  if t [m] < x then
+    i := m + 1
+  elseif t [m] = x then
+    Result := True
+  else
+    j := m - 1
+  end
+  --There is no Result(return), it did not return the value that should be found
+  --(Resut:=(x=t[i]))
+end

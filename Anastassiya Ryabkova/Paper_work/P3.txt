@@ -1,0 +1,26 @@
+from
+ i:=0;j:=n; 
+until
+i=j 
+loop
+ m:=(i+j+1)//2
+ if t[m]<=x 
+then 
+i:=m+1 
+else 
+j:=m 
+end
+end 
+if i>=1 and i<=n
+then 
+Result:=(x=t[i]) // cause it is should be false, t[i] /=x
+else 
+Result:=False 
+end
+
+[2,4,5] x=2, cause false result
+
+
+
+
+

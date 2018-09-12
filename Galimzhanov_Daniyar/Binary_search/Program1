@@ -1,0 +1,12 @@
+--Program_1
+from
+  i := 1; j := n
+until i = j loop
+  m := (i + j) // 2
+  if t [m] <= x then
+    i := m --Error, there is infinite loop, because it will start from the same point
+  else
+    j := m
+  end
+end
+Result := (x = t[i])
