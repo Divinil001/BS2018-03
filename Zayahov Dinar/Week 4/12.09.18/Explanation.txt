@@ -1,0 +1,11 @@
+In P1, P3, P4 code fragments it is not "return" procedure. If we find required value x, the part of code that go after loop does not know which "i" is correct.
+Example for P3, P4:
+Array[1,2,3] Required value:2
+Output: False, because "if" condition take i=0.
+
+Example for P1:
+Array:[1,2,3] Required value:2
+Output: False, because 2!=t[1]
+
+P2: 
+infinite loop.
