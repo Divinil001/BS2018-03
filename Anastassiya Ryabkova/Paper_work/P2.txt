@@ -3,7 +3,7 @@ P2 is incorrect
 from
 i:=1;j:=n;Result:= False
  until
-i=j and not Result 
+i=j and not Result // infinite room
 loop 
 m:=(i+j)//2 
 if t[m] < x 
