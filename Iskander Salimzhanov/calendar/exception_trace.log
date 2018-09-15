@@ -1,0 +1,25 @@
+
+calendar: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        at @1                  valid_key:                   
+<000000000404E948>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+CALENDAR            add_entry @1                                        
+<000000000404E928>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+WORK                make @37                                            
+<000000000404E5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+WORK                root's creation                                     
+<000000000404E5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+calendar: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...

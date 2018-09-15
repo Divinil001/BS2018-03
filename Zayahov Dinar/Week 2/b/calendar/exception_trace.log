@@ -1,0 +1,102 @@
+
+calendar: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @3                  index_large_enough:          
+<0000000004362A98>                         Runtime check violated.       Fail
+-------------------------------------------------------------------------------
+ARRAY               at @3                                               
+<0000000004362A98>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               days_in_i_th_month @3                               
+<0000000004361698>  (From DATE_CONSTANTS)  Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               days_in_month @1                                    
+<0000000004361698>  (From DATE_MEASUREMENT)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               set_day @2             d_small_enough:              
+<0000000004361698>  (From DATE_VALUE)      Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @18                                            
+<00000000043615A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000043615A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+calendar: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+calendar: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @3                  index_large_enough:          
+<0000000004257A98>                         Runtime check violated.       Fail
+-------------------------------------------------------------------------------
+ARRAY               at @3                                               
+<0000000004257A98>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               days_in_i_th_month @3                               
+<0000000004256698>  (From DATE_CONSTANTS)  Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               days_in_month @1                                    
+<0000000004256698>  (From DATE_MEASUREMENT)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               set_day @2             d_small_enough:              
+<0000000004256698>  (From DATE_VALUE)      Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @18                                            
+<00000000042565A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000042565A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+calendar: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY               at @3                  index_large_enough:          
+<0000000004293A98>                         Runtime check violated.       Fail
+-------------------------------------------------------------------------------
+ARRAY               at @3                                               
+<0000000004293A98>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               days_in_i_th_month @3                               
+<0000000004292698>  (From DATE_CONSTANTS)  Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               days_in_month @1                                    
+<0000000004292698>  (From DATE_MEASUREMENT)
+                                           Routine failure.              Fail
+-------------------------------------------------------------------------------
+ENTRY               set_day @2             d_small_enough:              
+<0000000004292698>  (From DATE_VALUE)      Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @18                                            
+<00000000042925A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000042925A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+calendar: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...

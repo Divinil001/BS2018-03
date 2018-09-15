@@ -1,0 +1,80 @@
+(P1)
+from
+	i := 1; j := n
+until i = j
+loop
+	m := (i + j) // 2
+	if t [m] <= x then
+		i := m
+	else
+		j := m
+	end
+end
+Result := (x = t[i])
+-- Incorrect. It will go into infinite loop in some cases. For example:
+-- [1, 2, 3], looking for 2
+--     ^ - mid
+-- 
+--  1 [2, 3]
+--     ^
+-- 
+--  1 [2, 3]
+--     ^
+-- And so on...
+-- To fix - change 
+--	"i := m" to "i := m + 1"
+--	"j := m" to "j := m - 1"
+
+(P2)
+from
+	i := 1; j := n; Result := False
+until i = j and not Result loop -- Error is here. If we find wanted result, the loop will never exit because of "not Result"
+	m := (i + j) // 2
+	if t [m] < x then
+		i := m + 1
+	elseif t [m] = x then
+		Result := True
+	else
+		j := m - 1
+	end
+end
+-- Incorrect. Will never quit in some cases.
+-- To fix - remove "not Result" from until condition.
+
+(P3)
+from
+	i := 0; j := n;
+until i = j loop
+		m := (i + j + 1) // 2
+	if t [m] <= x then
+		i := m + 1 -- This will break our Result. If we had condition for t[m] = x that did nothing with bounds, it could work correctly, but in current implementation it will move border to the wrong position.
+	else
+		j := m
+	end
+end
+if i >= 1 and i <= n then
+	Result := (x = t [i])
+else
+	Result := False
+end
+-- Incorrent. You can try [1, 2, 3] and x = 1. At the end we get i = 2, j = 2, and t[2] != 1, which gives Result = False, when it should be True.
+-- To fix - add one more clause for t[m] = x that won't modify any bounds and set Result to True. Then, in the end, remove last 5 lines of code. 
+
+(P4)
+from
+	i := 0; j := n + 1;
+until i = j loop
+	m := (i + j) // 2
+	if t [m] <= x then
+		i := m + 1
+	else
+		j := m
+	end
+end
+if i >= 1 and i <= n then
+	Result := (x = t [i])
+else
+	Result := False
+end
+-- Incorrect, because we increase upper bound to outside of array, and if we find for a number which is larger than last element of array, we will get out of bounds exception. For example: t = [1, 2, 3] and x = 4.
+-- This implementation has too many errors to get it to working state, so it is easier to just rewrite it from scratch. I don't see any reason for trying fixing this snippet.

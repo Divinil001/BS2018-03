@@ -1,0 +1,21 @@
+P2 is incorrect
+
+from
+i:=1;j:=n;Result:= False
+ until
+i=j and not Result // infinite room
+loop 
+m:=(i+j)//2 
+if t[m] < x 
+then 
+i:=m+1 
+else 
+if t[m]=x 
+then 
+Result:=True
+else j:=m-1 
+end 
+end
+
+[ 2, 5, 6, 7,9]
+infinite loop

@@ -1,0 +1,57 @@
+﻿**********************************************************************
+Date: 08/27/2018 7:16:41.655 PM
+Compiling target "business_card" from config "./business_card.ecf"
+
+Compiler's arguments in UTF-8 encoding: -config ./business_card.ecf -target business_card -batch -clean -project_path . -melt 
+Eiffel Compilation Manager
+Version 18.01.10.1424 GPL Edition - linux-x86-64
+
+-------------------------------------------------------------------------------
+
+Error code: VD41
+
+Configuration error: cannot retrieve precompiled system (it might be corrupted).
+What to do: make sure that the directory specified in the Ace file does
+  indeed contain a precompiled system.
+
+Precompiled path: /home/maxim/.es/eiffel_user_files/18.01/precomp/spec/linux-x86-64
+
+-------------------------------------------------------------------------------
+**********************************************************************
+Date: 08/27/2018 7:22:40.866 PM
+Compiling target "business_card" from config "./business_card.ecf"
+
+Compiler's arguments in UTF-8 encoding: -config ./business_card.ecf -target business_card -batch -project_path . -melt 
+Eiffel Compilation Manager
+Version 18.01.10.1424 GPL Edition - linux-x86-64
+
+-------------------------------------------------------------------------------
+
+Error code: VD41
+
+Configuration error: cannot retrieve precompiled system (it might be corrupted).
+What to do: make sure that the directory specified in the Ace file does
+  indeed contain a precompiled system.
+
+Precompiled path: /home/maxim/.es/eiffel_user_files/18.01/precomp/spec/linux-x86-64
+
+-------------------------------------------------------------------------------
+**********************************************************************
+Date: 08/27/2018 7:23:06.169 PM
+Compiling target "business_card" from config "./business_card.ecf"
+
+Compiler's arguments in UTF-8 encoding: -config ./business_card.ecf -target business_card -batch -project_path . -melt 
+Eiffel Compilation Manager
+Version 18.01.10.1424 GPL Edition - linux-x86-64
+
+-------------------------------------------------------------------------------
+
+Error code: VD41
+
+Configuration error: cannot retrieve precompiled system (it might be corrupted).
+What to do: make sure that the directory specified in the Ace file does
+  indeed contain a precompiled system.
+
+Precompiled path: /home/maxim/.es/eiffel_user_files/18.01/precomp/spec/linux-x86-64
+
+-------------------------------------------------------------------------------
