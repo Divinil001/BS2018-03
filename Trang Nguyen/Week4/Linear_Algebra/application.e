@@ -87,7 +87,7 @@ feature -- Access
 				from j := 1
 				until j > m.width
 				loop
-					print (m.item (i, j).out + " ")
+					print (m.item (i, j).out + "%T")
 					j := j + 1
 				end
 				io.new_line
