@@ -16,7 +16,6 @@ feature
 	elements: ARRAYED_LIST[CELL_INFO]
 
 feature {NONE} -- Initialization
-
 	make
 		local
 			element: CELL_INFO
@@ -34,22 +33,24 @@ feature {NONE} -- Initialization
 				elements.extend(element)
 				i:=i+1
 			end
-			add(a,4)
 		end
+
 feature
 	add(val: CHARACTER; n: INTEGER)
-	 do
-	 	elements.at(val.code+1).add_number_copies(n)
-	 end
-	 remove(val: CHARACTER;n: INTEGER)
-	 	do
-	 		elements.at(val.code+1).add_number_copies(-n)
-	 	end
-	 min: CHARACTER
-	 	local
-	 		i: INTEGER
+		do
+			elements.at(val.code+1).add_number_copies(n)
+		end
+
+	remove(val: CHARACTER;n: INTEGER)
+		do
+			elements.at(val.code+1).add_number_copies(-n)
+		end
+
+	min: CHARACTER
+		local
+			i: INTEGER
 	 		minimal: CHARACTER
-	 	do
+		do
 	 		minimal:=elements.at(128).value
 	 		from
 	 			i:=1
@@ -63,9 +64,11 @@ feature
 	 			end
 	 			i:=i+1
 	 		end
+	 	Result:=minimal
 	 	end
-	 max: CHARACTER
-	 	local
+
+	max: CHARACTER
+		local
 	 		i: INTEGER
 	 		maximum: CHARACTER
 	 	do
@@ -82,8 +85,10 @@ feature
 	 			end
 	 			i:=i+1
 	 		end
+	 	Result:=maximum
 	 	end
-	 is_equal_bag(b:APPLICATION):BOOLEAN
+
+	is_equal_bag(b:APPLICATION):BOOLEAN
 		local
 	 			i: INTEGER
 	 	do
@@ -102,4 +107,5 @@ feature
 	 			i:=i+1
 	 		end
 	 	end
+
 end
