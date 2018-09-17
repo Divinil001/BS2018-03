@@ -91,5 +91,6 @@ feature
 		do
 			Result := call_emergency
 		end
-
+	invariant
+		phone_number>0
 end
