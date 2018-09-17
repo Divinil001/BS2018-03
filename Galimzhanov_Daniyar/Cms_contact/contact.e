@@ -36,20 +36,28 @@ feature
 		end
 
 	set_phone_number (num: INTEGER)
+		require
+			positive_number: num>0
 		do
 			phone_number := num
+		ensure
+			phone_number = num
 		end
 
 	set_work_place ( work: STRING)
 		do
 			--create work_place.make_empty
 			work_place := work
+		ensure
+			work_place = work
 		end
 
 	set_email ( mail: STRING)
 		do
 			--create email.make_empty
 			email := mail
+		ensure
+			email=mail
 		end
 
 	set_emergency ( emergency: detachable CONTACT)
