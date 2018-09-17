@@ -18,11 +18,18 @@ feature
     
 feature 
     create_class(an_name:STRING;a_number:INTEGER;work:STRING;a_email:STRING)
+    	require
+	    positive_number: a_number > 0
         do
             name:=an_name
             phone_number:=a_number
             work_place:=work
             email:=a_email
+    	ensure
+	    name=an_name
+            phone_number=a_number
+            work_place=work
+            email=a_email
         end
         
     get_name: STRING
