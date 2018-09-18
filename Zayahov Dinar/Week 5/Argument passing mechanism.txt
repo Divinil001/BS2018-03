@@ -1,0 +1,25 @@
+1. by value
+	2
+	3
+	2
+	148
+2. by result
+	1
+	2
+	1
+	128
+3. by value-result
+	3
+	5
+	3
+	168
+4. by reference
+	3
+	5
+	3
+	168
+5. by name
+	3
+	5
+	3
+	168
