@@ -1,0 +1,19 @@
+
+matrix_oper: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAY2              item @2                valid_column:                
+<0000000003FD05E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @8                                             
+<0000000003FD05A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<0000000003FD05A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------

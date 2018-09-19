@@ -11,6 +11,8 @@ create
 feature {NONE}
 
 	draw (k: INTEGER)
+		require
+			k>0
 		local
 			i, j, l, m: INTEGER
 			s, d, s_2: STRING
@@ -97,7 +99,7 @@ feature {NONE}
 		end
 
 	make
-		do  
+		do
 		    io.putstring("Write height: ")
 			io.read_integer
 			draw (io.last_integer)

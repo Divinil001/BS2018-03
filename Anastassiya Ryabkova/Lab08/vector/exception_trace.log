@@ -1,0 +1,38 @@
+
+vector: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+VECTOR_OPER         cross_product @1       v1_exist:                    
+<00000000040775F8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @4                                             
+<00000000040775A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000040775A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+vector: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+VECTOR_OPER         cross_product @1       v1_exist:                    
+<0000000003F6E5F8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @4                                             
+<0000000003F6E5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<0000000003F6E5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
