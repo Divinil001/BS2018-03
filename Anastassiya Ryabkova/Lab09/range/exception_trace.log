@@ -1,0 +1,19 @@
+
+range: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+RANGE               is_equal_range @1      range_equal:                 
+<000000000419D5E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @3                                             
+<000000000419D5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000419D5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
