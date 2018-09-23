@@ -29,8 +29,8 @@ feature -- Access
 			create Result.make (1)
 			if Current.overlaps (other) then
 				if Current.is_sub_range_of (other) or Current.is_equal_range (other) then
-					r.set_left (-1)
-					r.set_right (0)
+					r.set_left (0)
+					r.set_right (-1)
 					Result.extend (r)
 				else
 					if Current.is_super_range_of (other) then
@@ -70,9 +70,10 @@ feature -- Access
 				r.set_left (other.left)
 				r.set_right (other.right)
 				Result.extend (r)
-			elseif Current.is_super_range_of (other) or other.is_empty then
+			elseif Current.is_super_range_of (other) or Current.is_equal_range (other) or other.is_empty then
 				r.set_left (left)
 				r.set_right (right)
+				Result.extend (r)
 			elseif Current.left_overlaps (other) or Current.right_overlaps (other) then
 				if left <= other.left then
 					r.set_left (left)
