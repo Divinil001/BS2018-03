@@ -54,12 +54,20 @@ feature
 			if array.count = 1 then
 				Result := array
 			else
-				from index1 := 1 until index1 > array.count // 2 loop
+				from 
+					index1 := 1
+				until 
+					index1 > array.count // 2 
+				loop
 					left.extend (array[index1])
 					index1 := index1 + 1
 				end
 				left := merge_sort(left)
-				from index1 := array.count // 2 + 1 until index1 > array.count loop
+				from 
+					index1 := array.count // 2 + 1 
+				until
+					index1 > array.count 
+				loop
 					right.extend (array[index1])
 					index1 := index1 + 1
 				end
