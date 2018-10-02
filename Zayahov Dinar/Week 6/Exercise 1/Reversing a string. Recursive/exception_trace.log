@@ -1,0 +1,120 @@
+
+project: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+STRING_8            item @3                valid_index:                 
+<00000000042455E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @2                                          
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @1                                             
+<00000000042455A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000042455A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+project: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+project: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+STRING_8            item @3                valid_index:                 
+<00000000042C85E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @2                                          
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @1                                             
+<00000000042C85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000042C85A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+project: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+project: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+STRING_8            item @3                valid_index:                 
+<000000000428F5E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @2                                          
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         reverse @4                                          
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @1                                             
+<000000000428F5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000428F5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+project: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
