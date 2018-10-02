@@ -1,0 +1,1 @@
+A  man put pair of rabbits in the place and in this current months they will produce new pair. In the next 12 months it will be 2^(12+1) rabbits in this place. 2^(12+1)-2 new rabbits. But if we consider old pair that was in the beginning they will produce only 12 pair of rabbits.
