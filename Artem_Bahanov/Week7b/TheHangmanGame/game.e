@@ -12,11 +12,11 @@ feature{NONE}
 	new_random(n: INTEGER): INTEGER
 	require
 		n >= 1
-    do
-    	random_sequence.forth
-    	Result := random_sequence.item \\ n + 1
-    ensure
-    	Result > 0
+    	do
+		random_sequence.forth
+		Result := random_sequence.item \\ n + 1
+    	ensure
+    		Result > 0
   	end
 
   	start_game
