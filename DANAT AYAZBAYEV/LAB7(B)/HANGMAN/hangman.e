@@ -30,11 +30,11 @@ feature {NONE}
 			st : STRING
 			i : INTEGER
 			l_time: TIME
-      		l_seed: INTEGER
-      		x : INTEGER
-      		attempt : INTEGER
-      		flag : BOOLEAN
-      		flag2 : BOOLEAN
+			l_seed: INTEGER
+			x : INTEGER
+			attempt : INTEGER
+			flag : BOOLEAN
+			flag2 : BOOLEAN
    			guessed : INTEGER
    			space : INTEGER
    			last : STRING
@@ -44,11 +44,11 @@ feature {NONE}
 			last := ""
 			create used.make (0)
 			create l_time.make_now
-      		l_seed := l_time.hour
-      		l_seed := l_seed * 60 + l_time.minute
-      		l_seed := l_seed * 60 + l_time.second
-     		l_seed := l_seed * 1000 + l_time.milli_second
-      		create ranseq.set_seed (l_seed)
+			l_seed := l_time.hour
+			l_seed := l_seed * 60 + l_time.minute
+			l_seed := l_seed * 60 + l_time.second
+			l_seed := l_seed * 1000 + l_time.milli_second
+			create ranseq.set_seed (l_seed)
 			st := ""
 			create animals.make(0)
 			create input_file.make_open_read("input.txt")
