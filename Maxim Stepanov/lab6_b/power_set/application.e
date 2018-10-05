@@ -58,11 +58,9 @@ feature
 			i, n: INTEGER
 			tmp: ARRAYED_LIST [INTEGER]
 		do
-			print("Running gen_power_set%N")
-
 			n := arr.count
 
-			if index = n then
+			if index > n then
 					-- do nothing
 			else
 				create tmp.make (0)
@@ -74,6 +72,7 @@ feature
 					i > n
 				loop
 					cur.extend (arr [i])
+					create tmp.make (0)
 					tmp.copy (cur)
 					gen_power_set (arr, i, tmp);
 					cur.prune(cur[cur.count])

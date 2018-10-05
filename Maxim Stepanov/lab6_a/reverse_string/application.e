@@ -19,7 +19,7 @@ feature {NONE}
 		local
 			str: STRING
 		do
-			str := "f^C^C A very good string"
+			str := "A very good string"
 			str := reverse_string_iterative (str)
 			print (str)
 			print ("%N")
