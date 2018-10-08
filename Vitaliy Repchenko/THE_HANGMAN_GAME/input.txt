@@ -1,0 +1,209 @@
+animal
+apple
+arm
+baby
+badminton
+bag
+ball
+balloon
+banana
+bear
+bed
+bee
+bike
+bird
+blackboard
+block
+boat
+book
+box
+boy
+brother
+bus
+butterfly
+cage
+cake
+car
+carpet
+cat
+ceiling
+chair
+chicken
+child
+circus
+class
+clock
+crocodile
+daughter
+desk
+doctor
+dog
+doll
+door
+driver
+duck
+ear
+egg
+elephant
+exercise
+exercise-book
+eye
+face
+father
+fish
+floor
+food
+foot
+football
+fox
+friend
+frog
+fruit
+fun
+game
+garden
+giraffe
+girl
+grass
+gun
+hair
+hare
+hat
+head
+hen
+hide-and-seek
+home
+horse
+house
+ice cream
+juice
+kite
+kitten
+lamp
+leaf
+leg
+lemon
+letter
+lion
+man
+milk
+monkey
+mother
+mouse
+mouth
+music
+name
+neck
+nest
+nose
+number
+nut
+orange
+page
+parents
+park
+parrot
+pen
+pencil
+pet
+picture
+pie
+pig
+pilot
+plane
+plate
+playground
+pupil
+puppy
+rabbit
+room
+rose
+ruler
+school
+sheep
+ship
+shirt
+sister
+skate
+ski
+skirt
+snake
+snow
+snowball
+snowman
+sofa
+son
+song
+sport
+sport ground
+stadium
+star
+stick
+stone
+suit
+swimming pool
+table
+tail
+teacher
+thing
+tie
+tiger
+time
+tooth
+top
+toy
+train
+tree
+trick
+wall
+water
+window
+wolf
+zoo
+note
+revision
+class
+application
+inherit
+arguments
+create
+make
+feature
+Run
+application.
+do
+Add
+Bye!
+Come here!
+Do you like ...?
+Does hi like ...?
+Glad to see you.
+Go there!
+Good morning!
+Have you got...?
+He has got...
+Here you are!
+Hi!
+How are you?
+How many?
+How old are you?
+I can...
+I have got
+I haven't got
+I like ...
+I'm sorry.
+It is...
+Let's play!
+Look at...
+May I take ...?
+My name is...
+Nice to meet you.
+Try again!
+We can do a lot of things.
+What colour is it?
+What is this?
+What is your name?
+Where is (are)...?
+Who likes to...?
+Who has got...?
+Where are you from?
