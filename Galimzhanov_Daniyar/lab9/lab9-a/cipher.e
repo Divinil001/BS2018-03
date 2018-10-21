@@ -2,7 +2,7 @@ deferred class
     CIPHER
 
 feature
-    encrypt(word_to_encr:STRING; my_key:STRING):STRING
+    encrypt(word_to_encr:STRING; a_key:STRING):STRING
         do
             Result:=""
         end
