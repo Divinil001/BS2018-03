@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<system xmlns="http://www.eiffel.com/developers/xml/configuration-1-16-0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.eiffel.com/developers/xml/configuration-1-16-0 http://www.eiffel.com/developers/xml/configuration-1-16-0.xsd" name="ciphers" uuid="A39B0498-12FE-4A20-A9CB-C7686B318B15">
+	<target name="ciphers">
+		<root feature="make" class="APPLICATION"/>
+		<file_rule>
+			<exclude>/\.git$</exclude>
+			<exclude>/\.svn$</exclude>
+			<exclude>/CVS$</exclude>
+			<exclude>/EIFGENs$</exclude>
+		</file_rule>
+		<option warning="true">
+			<assertions precondition="true" postcondition="true" check="true" invariant="true" loop="true" supplier_precondition="true"/>
+		</option>
+		<setting name="console_application" value="true"/>
+		<precompile name="base_pre" location="$ISE_PRECOMP/base-scoop-safe.ecf"/>
+		<library name="base" location="$ISE_LIBRARY/library/base/base.ecf"/>
+		<cluster name="ciphers" location=".\" recursive="true"/>
+	</target>
+</system>
