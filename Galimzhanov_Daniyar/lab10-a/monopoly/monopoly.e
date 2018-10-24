@@ -57,7 +57,7 @@ feature{MONOPOLY, APPLICATION}
                 index:=index+1
             end
             print("%N")
-            --MAIN GAME
+            --MAIN GAME--
             from index:=1 until flag = true loop
                 --avoid overflow
                 if index > max_num_players then
