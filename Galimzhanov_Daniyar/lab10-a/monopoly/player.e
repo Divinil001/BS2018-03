@@ -108,7 +108,7 @@ feature{PLAYER, MONOPOLY}
                 	num_dice:=dice
                     print("Dice number: " + num_dice.out + "%N")
                     number_of_steps:=number_of_steps+num_dice
-                    print(number_of_steps.out + "%N")
+                    --print(number_of_steps.out + "%N")
                     flag_dice:=true
                 end
 
