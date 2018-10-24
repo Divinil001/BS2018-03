@@ -96,18 +96,20 @@ feature{PLAYER, MONOPOLY}
     action
         local
 
-            ind:INTEGER
-            --num_dice:INTEGER
+            flag_dice:BOOLEAN
+            num_dice:INTEGER
         do
-            from until number_of_steps>100 or ind=1 loop
+            from until number_of_steps>100 or flag_dice=true loop
                 print("Turn of " + name +"%N")
                 print("To throw dice write 'play' %N")
                 print("%N")
                 io.read_line
                 if io.last_string.twin ~ "play" then
-                    print("Dice number: " + dice.out + "%N")
-                    number_of_steps:=number_of_steps+dice
-                    ind:=1
+                	num_dice:=dice
+                    print("Dice number: " + num_dice.out + "%N")
+                    number_of_steps:=number_of_steps+num_dice
+                    print(number_of_steps.out + "%N")
+                    flag_dice:=true
                 end
 
             end
