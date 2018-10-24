@@ -1,4 +1,4 @@
-﻿note
+note
 	description: "Summary description for {MONOPOLY}."
 	author: ""
 	date: "$Date$"
@@ -57,7 +57,7 @@ feature{MONOPOLY, APPLICATION}
                 index:=index+1
             end
             print("%N")
-            --MAIN GAME--
+            --MAIN GAME
             from index:=1 until flag = true loop
                 --avoid overflow
                 if index > max_num_players then
@@ -68,7 +68,7 @@ feature{MONOPOLY, APPLICATION}
 
                 player:=players[index] -- choose player
                 player.check_budget
-				
+
                 if player.check_activity then
                     print("%N")
                     print("Player " + player.name + " out of the game")
@@ -93,6 +93,9 @@ feature{MONOPOLY, APPLICATION}
                 end
                 player.action
                 num_position:=player.number_of_steps \\ 20
+                if num_position = 0 then
+                	num_position := 1
+                end
                 player.set_position(board.at(num_position))
                 if player.position ~ "INCOME TAX" then
                     print("%N")
@@ -127,6 +130,7 @@ feature{MONOPOLY, APPLICATION}
                     elseif io.last_string.twin ~ "pay a fine" then
                         player.pay_fine
                     end
+                    index:=index + 1
                 elseif player.position ~ board2.at(num_position) + " SOLD" then
                     print("%N")
                     print("You should pay rent%N")
@@ -141,7 +145,7 @@ feature{MONOPOLY, APPLICATION}
                     player.rent(board.rent(num_position))
                     print("Your current balance: " + player.budget.out + "%N")
                     index:=index+1
-                elseif player.position ~ "START" or (player.number_of_steps >= 20 and player.number_of_steps < 40) or (player.number_of_steps >= 40 and player.number_of_steps < 60) or (player.number_of_steps >= 60 and player.number_of_steps < 80) then
+                elseif player.position ~ "START" then
                     print("%N")
                     print("319 GIVES YOU YOUR SALARY(/STIPA_PRISHLA)%N")
                     player.get_salary
@@ -160,6 +164,7 @@ feature{MONOPOLY, APPLICATION}
                     if io.last_string.twin ~ "buy" then
                         player.buy(board.price(num_position), board.at(num_position))
                         board.change(num_position, board.at(num_position) + " SOLD")
+                        print("Your current balance: " + player.budget.out + "%N")
                         index:=index+1
                     elseif io.last_string.twin ~"no" then
                         player.rent(board.rent(num_position))
