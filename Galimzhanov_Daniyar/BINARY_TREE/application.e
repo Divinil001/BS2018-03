@@ -21,7 +21,7 @@ feature {NONE} -- Initialization
 	make
 			-- Run application.
 		do
-			--| Add your code here
+			
 			create bin_tree.make_tree(5)
 			bin_tree.add (7)
 			bin_tree.add (3)
