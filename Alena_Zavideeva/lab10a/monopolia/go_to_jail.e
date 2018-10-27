@@ -13,7 +13,7 @@ feature
 		end
 
 feature
-	jail(player: PLAYER)
+	action(player: PLAYER)
 		do
 			player.change_position (6)
 			player.change_status_in_jail

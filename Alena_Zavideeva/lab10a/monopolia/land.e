@@ -1,7 +1,9 @@
 class
 	LAND
 inherit SQUARD
-
+redefine
+	action
+end
 create make
 
 feature
@@ -24,26 +26,32 @@ feature -- Queries
 		end
 
 feature -- Commands
-	buy (owner_ : PLAYER)
-		require
-			no_owner: owner = Void
+	action (player: PLAYER)
 		do
-			owner := owner_
-			owner_.remove_money (price)
-		end
+			if owner = Void then
+				Io.put_string (player.get_name+ " can buy this property. Do you want to buy property? Y/N%N")
+				Io.put_string ("Price: " + price.out + " " + "Rent: " + rent.out + "%N")
+				Io.readline
 
-	step (player: PLAYER)
-		do
-			player.remove_money (rent)
-			if
-				attached owner as o
-			then
-				o.add_money (rent)
+				if
+					Io.last_string.out ~ "Y" and player.get_money >= price
+				then
+					Io.put_string (player.get_name + " bought property%N")
+					owner := player
+					player.remove_money (price)
+				elseif Io.last_string.out ~ "Y" then
+					Io.put_string (player.get_name + " hasn't enough money for buying this property%N")
+				end
+			else
+				if attached owner as own then
+					Io.put_string ("This property is sold." + player.get_name + " payes money player: " + own.get_name + "%N")
+					player.remove_money (rent)
+					own.add_money (rent)
+					if player.get_money < 0 then
+						player.game_over
+					end
+				end
 			end
-		end
-	change_owner (player : PLAYER)
-		do
-			owner := player
 		end
 
 	no_owner

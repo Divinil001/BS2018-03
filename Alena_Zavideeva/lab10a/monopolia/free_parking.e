@@ -10,4 +10,7 @@ feature
 			name := name_
 			position := position_
 		end
+	action(player: PLAYER)
+		do
+		end
 end

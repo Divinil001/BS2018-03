@@ -11,7 +11,7 @@ feature
 			position := position_
 		end
 feature
-	fine(player: PLAYER)
+	action(player: PLAYER)
 		do
 			player.remove_money ((player.get_money * 0.1).truncated_to_integer)
 		end

@@ -12,8 +12,9 @@ feature
 		end
 feature
 
-	add_money(player: PLAYER)
+	action(player: PLAYER)
 		do
+			Io.put_string (player.get_name + " " + "gets money" + (200).out + "%N")
 			player.add_money(200)
 		end
 end
