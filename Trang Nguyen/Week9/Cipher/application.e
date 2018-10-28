@@ -18,16 +18,24 @@ feature {NONE} -- Initialization
 			-- Run application.
 		local
 			c: COMBINED_CIPHER
+			c1: VIGENERE_CIPHER
+			c2: SPIRAL_CIPHER
 			text: STRING
 		do
 			--| Add your code here
-			create c.make
-			text := c.encrypt ("STUDENTS, SOLVE THE ASSIGNMENT WELL AND FAST!")
-			io.new_line
+			create c1
+			create c2
+			create c.make (c1, c2)
+			text := "STUDENTS, SOLVE THE ASSIGNMENT WELL AND FAST!"
+			text := c1.encrypt (text)
 			print (text)
 			io.new_line
-			text := c.decrypt ("BDIICR !BL EYKYLBAHVGE SPJ JVTMW , WFXVKE ZXYZ")
+			text := c2.encrypt (text)
 			print (text)
+			io.new_line
+			text := c.decrypt (text)
+			print (text)
+			io.new_line
 		end
 
 end

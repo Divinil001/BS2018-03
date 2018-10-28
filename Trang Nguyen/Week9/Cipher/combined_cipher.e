@@ -7,45 +7,49 @@ note
 class
 	COMBINED_CIPHER
 
-inherit
-	CIPHER
-
 create
 	make
 
 feature
-
-	make
+	make (c1, c2: CIPHER)
 		do
-			create c1.make
-			create c2.make
+			create c.make (0)
+			c.extend (c1)
+			c.extend (c2)
 		end
 
-	c1: VIGENERE_CIPHER
-	c2: SPIRAL_CIPHER
+	c: ARRAYED_LIST [CIPHER]
 
 	encrypt (text: STRING): STRING
-		require else
+		require
 			text_not_empty: not text.is_empty
+			c_not_empty: not c.is_empty
+		local
+			i: INTEGER
 		do
 			Result := text
-			Result.to_upper
-			Result := c1.encrypt (Result)
-			Result := c2.encrypt (Result)
-		ensure then
-			length_equal: text.count = Result.count
+			from i := 1
+			until i > c.count
+			loop
+				Result := c[i].encrypt (Result)
+				i := i + 1
+			end
 		end
 
 	decrypt (text: STRING): STRING
-		require else
+		require
 			text_not_empty: not text.is_empty
+			c_not_empty: not c.is_empty
+		local
+			i: INTEGER
 		do
 			Result := text
-			Result.to_upper
-			Result := c2.decrypt (Result)
-			Result := c1.decrypt (Result)
-		ensure then
-			length_equal: text.count = Result.count
+			from i := c.count
+			until i < 1
+			loop
+				Result := c[i].decrypt (Result)
+				i := i - 1
+			end
 		end
 
 end
