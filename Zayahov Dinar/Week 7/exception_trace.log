@@ -1,0 +1,195 @@
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<00000000042A1838>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @9                                             
+<00000000042A15A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000042A15A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<00000000043CA838>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @7                                             
+<00000000043CA5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000043CA5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<0000000004452838>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @7                                             
+<00000000044525A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044525A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<00000000044DA628>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @57                                            
+<00000000044DA5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044DA5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<00000000043CB628>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @60                                            
+<00000000043CB5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000043CB5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<0000000004482628>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @60                                            
+<00000000044825A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044825A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<00000000043E9628>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @53                                            
+<00000000043E95A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000043E95A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<0000000004614628>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @53                                            
+<00000000046145A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000046145A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+exercise: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<0000000004568208>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @26                                            
+<00000000045625A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000045625A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+exercise: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
