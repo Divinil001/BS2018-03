@@ -29,3 +29,7 @@ feature {NONE} -- Initialization
 			q.add ("Math", -10)
 			q.add ("Physics", 18)
 			q.extract.print_event
+			q.add ("Programming", 7)
+		end
+
+end
