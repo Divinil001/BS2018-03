@@ -1,0 +1,241 @@
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<000000000442B0A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @45                                            
+<000000000442A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000442A5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<000000000435B0A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @45                                            
+<000000000435A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000435A5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        put_i_th @2            valid_key:                   
+<00000000044FC0A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @45                                            
+<00000000044FB5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044FB5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        remove @2              writable:                    
+<000000000461B0A8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @45                                            
+<000000000461A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000461A5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+APPLICATION         recursive @2           plus:                        
+<000000000442C5A8>                         Feature call on void target.  Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @2                                        
+<000000000442C5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @47                                            
+<000000000442C5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000442C5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+APPLICATION         recursive @10          extend:                      
+<00000000044925A8>                         Feature call on void target.  Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @10                                       
+<00000000044925A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @3                                        
+<00000000044925A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @3                                        
+<00000000044925A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @48                                            
+<00000000044925A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044925A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+APPLICATION         recursive @10          extend:                      
+<000000000454A5A8>                         Feature call on void target.  Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @10                                       
+<000000000454A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @3                                        
+<000000000454A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @3                                        
+<000000000454A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @48                                            
+<000000000454A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000454A5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+APPLICATION         recursive @13          status:                      
+<000000000448E5A8>                         Feature call on void target.  Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @13                                       
+<000000000448E5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @3                                        
+<000000000448E5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         recursive @3                                        
+<000000000448E5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @52                                            
+<000000000448E5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000448E5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<00000000044B8B68>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @12                                            
+<00000000044B85A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044B85A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+huffman_code: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<000000000435AB28>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @12                                            
+<000000000435A5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<000000000435A5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+huffman_code: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
