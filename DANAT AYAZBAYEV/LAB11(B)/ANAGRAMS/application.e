@@ -14,14 +14,26 @@ create
 
 feature
 	rec (pre : STRING; s : STRING)
+		--pre is the string composed from the characters program chose in every depth level of recursion
+		--and in the original string size-th depth 'pre' is printed and the remaining character is printed
+		--and the another one anagram is ready and printed
 		local
-			was : ARRAYED_LIST[BOOLEAN]
-			nxt : STRING
+			was : ARRAYED_LIST[BOOLEAN] 
+			--was[i] = true if ascii of the symbol appeared before
+			--without this check when two symbols are the same output will contain two same strings
+			--for example abb -> abb abb bab bba bab bba
+			--but the right answer is abb bab bba
+			nxt : STRING 
+			--it is the string except i-th element because 
+			--my algorithm works recursively by calling 
+			--function from other string except i-th element
+			--and adding i-th element to the end of 'pre' string
 			i : INTEGER
 			j : INTEGER
 		do
 			nxt := ""
 			create was.make_filled (500)
+			--i think ascii code will not exceed 500
 			if s.count = 1 then
 				print(pre + s[1].out + "%N")
 			else
