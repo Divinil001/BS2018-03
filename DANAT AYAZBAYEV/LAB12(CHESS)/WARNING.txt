@@ -1,0 +1,2 @@
+moves without castling, en passant, and transforming of pawn to another figure
+also king's role is not important, it can be eaten by other figures
