@@ -1,0 +1,119 @@
+
+monopoly: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<00000000044796E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+BOARD               step @5                                             
+<00000000044796C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @27                                            
+<00000000044795A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000044795A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+monopoly: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+monopoly: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<00000000043846E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+BOARD               step @5                                             
+<00000000043846C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @27                                            
+<00000000043845A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000043845A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+monopoly: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
+
+monopoly: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+ARRAYED_LIST        i_th @2                valid_index:                 
+<00000000042346E8>                         Precondition violated.        Fail
+-------------------------------------------------------------------------------
+BOARD               step @5                                             
+<00000000042346C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @27                                            
+<00000000042345A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000042345A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+monopoly: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+BOARD               step @4                Floating point exception:    
+<00000000041BD6C8>                         Floating point exception.     Fail
+-------------------------------------------------------------------------------
+BOARD               step @4                                             
+<00000000041BD6C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @27                                            
+<00000000041BD5A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000041BD5A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+monopoly: system execution failed.
+Following is the set of recorded exceptions:
+
+******************************** Thread exception *****************************
+In thread           Root thread            0x0 (thread id)
+*******************************************************************************
+-------------------------------------------------------------------------------
+Class / Object      Routine                Nature of exception           Effect
+-------------------------------------------------------------------------------
+BOARD               step @4                Floating point exception:    
+<00000000041F06C8>                         Floating point exception.     Fail
+-------------------------------------------------------------------------------
+BOARD               step @4                                             
+<00000000041F06C8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         make @27                                            
+<00000000041F05A8>                         Routine failure.              Fail
+-------------------------------------------------------------------------------
+APPLICATION         root's creation                                     
+<00000000041F05A8>                         Routine failure.              Exit
+-------------------------------------------------------------------------------
+
+
+monopoly: PANIC: caught signal #21 (Ctrl-Break) -- Giving up...
