@@ -25,7 +25,7 @@ feature
 			print(" -------------------------------------------%N")
 			print("|WARNING:                                   |%N")
 			print("|Game is starting                           |%N")
-			print("|Capatal letters and 1 are white figures    |%N")
+			print("|Capital letters and 1 are white figures    |%N")
 			print("|Small letters and 2 are black figures      |%N")
 			print("|Point '.' means empty space                |%N")
 			print(" -------------------------------------------%N")
