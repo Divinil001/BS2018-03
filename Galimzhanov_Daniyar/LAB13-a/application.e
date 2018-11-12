@@ -51,7 +51,7 @@ feature {NONE} -- Initialization
 			lab.remove_member ("Andrew")
 			lab.remove_member ("Ordinator")
 			print("%NAfter removing member %N")
-			print("%N")
+			--print("%N")
 			lab.introduce_all
 
 		end
