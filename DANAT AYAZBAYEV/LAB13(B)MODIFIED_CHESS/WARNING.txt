@@ -1,0 +1,1 @@
+Everything was implemented except en passant, and some draw situations (e.g. stalemate, two kings left, etc.)
